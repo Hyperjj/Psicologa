@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia Lara | Psicóloga - CRP MS 14/11057</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="./img/Logo%20psi.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+    <div id="custom-alert">Preencha nome e WhatsApp corretamente.</div>
+
+    <a href="https://wa.me/5567992675502?text=Olá%20Silvia!%20Gostaria%20de%20informações%20sobre%20o%20atendimento%20psicoterapêutico."
+       target="_blank"
+       class="whatsapp-float flex items-center gap-3"
+       aria-label="Agendar consulta pelo WhatsApp">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span>Agendar</span>
+    </a>
+
+    <header id="navbar" class="site-header py-5 px-4 md:px-6 sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="brand-mark">
+                <img class="brand-logo" src="./img/Logo%20psi.png" alt="" aria-hidden="true">
+                <div class="leading-tight">
+                    <span class="logo-name"><span id="primeiroNome"></span><span id="sobrenome"></span></span>
+                    <p class="microcopy"><span id="crp"></span></p>
+                </div>
+            </div>
+
+            <div class="header-note hidden md:flex" aria-hidden="true">
+                <span>Online e presencial</span>
+                <strong>Campo Grande - MS</strong>
+            </div>
+
+            <button id="menu-toggle" class="menu-button" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex justify-between items-center mb-14">
+            <span class="logo-name"><span id="nomeCompleto"></span></span>
+            <button id="menu-close" class="close-button" aria-label="Fechar menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="flex flex-col">
+            <a href="#inicio" class="mobile-nav-link">Início</a>
+            <a href="#sobre" class="mobile-nav-link">Sobre Mim</a>
+            <a href="#abordagens" class="mobile-nav-link">Abordagens</a>
+            <a href="#contato" class="mobile-nav-link">Contato</a>
+        </nav>
+    </div>
+
+    <main>
+        <section id="inicio" class="hero-section relative px-4 md:px-6 overflow-hidden">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.02fr_0.98fr] gap-12 lg:gap-16 items-end reveal active">
+                <div class="hero-copy">
+                    <p class="section-kicker">Psicoterapia online e presencial</p>
+                    <h1 class="hero-title">
+                        Um espaço de escuta para atravessar o que pede cuidado.
+                    </h1>
+                    <p class="hero-text">
+                        Atendimento clínico com base em Gestalt-terapia e Psicologia Transpessoal, em Campo Grande ou online para todo o Brasil.
+                    </p>
+                    <div class="action-row">
+                        <a href="#contato" class="btn-primary">
+                            <i data-lucide="calendar" class="w-5 h-5"></i>
+                            <span>Iniciar conversa</span>
+                        </a>
+                        <a href="#sobre" class="btn-secondary">
+                            <span>Conhecer a <span id="primeiroNome"></span></span>
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="portrait-frame">
+                    <img src="./img/Capturar.JPG" alt="Silvia Lara, psicóloga" class="portrait-image">
+                    <figcaption>
+                        <span id="crp"></span>
+                        <strong>Campo Grande - MS</strong>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="sobre" class="content-section reveal">
+            <div class="max-w-6xl mx-auto">
+                <div class="editorial-copy about-copy">
+                    <h2 class="section-title">Prazer, eu sou a <span id="primeiroNome"></span></h2>
+                    <div class="copy-columns">
+                        <p>
+                            Minha prática clínica parte de um olhar integral sobre o ser humano. Trabalho com escuta qualificada, sigilo ético e atenção ao modo como cada pessoa organiza sua experiência no presente.
+                        </p>
+                        <p>
+                            A terapia pode ser um caminho de autoconhecimento, elaboração emocional e crescimento pessoal. A proposta é construir um espaço sem julgamento, com presença, cuidado e responsabilidade.
+                        </p>
+                    </div>
+                    <blockquote>
+                        Atendimento presencial em Campo Grande e online para todo o Brasil.
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="abordagens" class="content-section approach-section reveal">
+            <div class="max-w-6xl mx-auto">
+                <div class="section-heading">
+                    <h2 class="section-title">Linhas de atuação</h2>
+                </div>
+
+                <div class="approach-list">
+                    <article class="approach-card">
+                        <div>
+                            <i data-lucide="eye" class="approach-icon"></i>
+                            <h3>Gestalt-terapia</h3>
+                            <p>
+                                Uma abordagem voltada à consciência, ao aqui e agora e à integração das emoções, favorecendo percepção, autonomia e contato mais claro consigo.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="approach-card">
+                        <div>
+                            <i data-lucide="sparkles" class="approach-icon"></i>
+                            <h3>Psicologia Transpessoal</h3>
+                            <p>
+                                Trabalha crescimento pessoal, sentido e desenvolvimento da consciência, considerando dimensões subjetivas e espirituais da experiência humana.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="content-section reveal">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20">
+                <div>
+                    <h2 class="section-title">Vamos conversar?</h2>
+                    <p class="contact-intro">
+                        Preencha seus dados e eu retorno pelo WhatsApp para alinharmos o melhor formato de atendimento.
+                    </p>
+
+                    <div class="contact-form">
+                        <div>
+                            <label class="form-label">Seu nome completo</label>
+                            <input type="text" id="f-nome" placeholder="Ex: Maria Oliveira" class="form-input">
+                        </div>
+
+                        <div>
+                            <label class="form-label">WhatsApp / telefone</label>
+                            <input type="tel" id="f-fone" placeholder="(67) 99999-0000" class="form-input">
+                        </div>
+
+                        <div>
+                            <label class="form-label">Área de interesse</label>
+                            <select id="f-esp" class="form-input">
+                                <option value="">Selecione uma opção</option>
+                                <option value="Psicoterapia Adulto">Psicoterapia Adulto</option>
+                                <option value="Gestalt-terapia">Gestalt-terapia</option>
+                                <option value="Psicologia Transpessoal">Psicologia Transpessoal</option>
+                                <option value="Orientação / Dúvidas">Orientação / Dúvidas</option>
+                            </select>
+                        </div>
+
+                        <fieldset>
+                            <legend class="form-label">Como deseja ser atendido?</legend>
+                            <div class="mode-options">
+                                <label>
+                                    <input type="radio" name="modalidade" value="Online" checked>
+                                    <span>Online</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="modalidade" value="Presencial">
+                                    <span>Presencial</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div>
+                            <label class="form-label">Mensagem opcional</label>
+                            <textarea id="f-msg" rows="3" placeholder="Conte brevemente o que você busca..." class="form-input resize-none"></textarea>
+                        </div>
+
+                        <button id="form-submit" class="btn-primary form-submit">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Enviar pelo WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <aside class="contact-aside">
+                    <div id="info-card-dynamic" class="info-panel">
+                        <div id="info-card-content" class="info-panel-content fade-in-card">
+                            <p class="panel-eyebrow">Modalidade selecionada</p>
+                            <h4>Online</h4>
+                            <p>A sessão acontece por vídeo, em ambiente reservado, com o mesmo cuidado ético do atendimento presencial.</p>
+                            <dl>
+                                <div>
+                                    <dt>Indicado para</dt>
+                                    <dd>Quem busca flexibilidade de local e rotina.</dd>
+                                </div>
+                                <div>
+                                    <dt>Depois do envio</dt>
+                                    <dd>Você recebe retorno pelo WhatsApp para combinar horários.</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="care-note">
+                        <span>Primeiro contato</span>
+                        <p>Não é preciso explicar tudo no formulário. Uma mensagem breve já é suficiente para começarmos a organizar o atendimento.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="footer-brand">
+                <span class="logo-name"><span id="primeiroNome"></span><span id="sobrenome"></span></span>
+                <p>Psicóloga - <span id="crp"></span></p>
+            </div>
+            <p class="footer-copy">© 2026 <span id="primeiroNome"></span><span id="sobrenome"></span> - Todos os direitos reservados</p>
+            <div class="footer-links">
+                <a class="footer-instagram" href="https://www.instagram.com/psilaraujo_" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Lara Araújo">
+                    <img src="./img/instagram-letter-white-logo-icon-ig-app-transparent-background-premium-social-media-design-for-digital-download-free-png.webp" alt="" aria-hidden="true">
+                    <span>Lara Araújo</span>
+                </a>
+                <a class="footer-instagram" href="https://www.instagram.com/vhmarkweb/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da VH Marketing WEB">
+                    <img src="./img/instagram-letter-white-logo-icon-ig-app-transparent-background-premium-social-media-design-for-digital-download-free-png.webp" alt="" aria-hidden="true">
+                    <span>VH Marketing WEB</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
